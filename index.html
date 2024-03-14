@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="/stylec.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        
+        width: 500px ;
+        padding: 20px;
+    }
+</style>
+    
+</head>
+<body>
+<div>
+    <h1>Reservation Request</h1>
+    <form>
+    <fieldset>
+<legend>General Information</legend>
+<label>Arrival date: </label>
+<input type="date" placeholder="12/09/2016">
+<label ><span class="error1">Arrival date is invalid.</span> </label>
+<br>
+<label> Nights: </label>
+<input type="text" placeholder="three">
+<label ><span class="error1">Nights must be a number.</span> </label>
+<br>
+<label> Adults: </label>
+<select> 
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+<br>
+<label> Children: </label>
+<select>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+ </fieldset>
+ <fieldset>
+    <legend>Preferences</legend>
+    <label>Room type:</label>
+    <input type="radio">
+    <label>Standart</label>
+    <input type="radio">
+    <label>Business</label>
+    <input type="radio">
+    <label>Suite</label>
+    <br>
+    <label>Bed type:</label>
+    <input type="radio">
+    <label>King</label>
+    <input type="radio">
+    <label>Double Double</label>
+    <br>
+    <input type="checkbox">
+    <label>Smoking</label>
+    
+</fieldset>
+<fieldset>
+    <legend>Contact Information</legend> 
+    <label>Name:</label>
+    <input type="text" placeholder=" ">
+    <label ><span class="error1">Name is required.</span> </label>
+    <br>
+    <label>Email:</label>
+    <input type="text" placeholder="graceyahoo@gmail.com">
+    <label ><span class="error1">Email adress is invalid.</span> </label>
+    <br>
+    <label>Phone:</label>
+    <input type="text" placeholder="123-456-789">
+    <label ><span class="error1">Phone number is invalid.</span> </label>
+</fieldset>
+<button>Submit Reservation</button>
+<button>Clear</button>
+
+</form>
+</div>
+</body>
+</html>
